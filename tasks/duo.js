@@ -9,7 +9,6 @@
 'use strict';
 
 var Duo = require('duo');
-var path = require('path');
 
 module.exports = function(grunt) {
 
