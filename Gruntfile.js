@@ -1,6 +1,6 @@
 /*
- * grunt-wait-async
- * https://github.com/imyelo/grunt-wait-async
+ * grunt-duojs
+ * https://github.com/imyelo/grunt-duojs
  *
  * Copyright (c) 2013 yelo
  * Licensed under the MIT license.

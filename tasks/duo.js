@@ -16,7 +16,7 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('duojs', 'compile duojs', function() {
     var options = this.options({
       root: process.cwd(),
-      entry: './src',
+      entry: './index.js',
       standalone: '',
       development: false,
       cache: true,
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     });
     var done = this.async();
 
-    function compile (callback) {
+    (function compile () {
       var duo = new Duo(options.root)
         .entry(options.entry)
         .standalone(options.standalone)
@@ -48,10 +48,12 @@ module.exports = function(grunt) {
             'The original exception was: ' +
             err);
           grunt.fail.warn('Duojs failed to compile.');
+          return done(err);
         }
         done();
       });
-    }
+    })();
+
 
   });
 

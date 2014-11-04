@@ -41,7 +41,7 @@ grunt.initConfig({
 
 #### options.entry  
 Type: `string`  
-Default value: `./src`  
+Default value: `./index.js`  
 
 #### options.custom  
 Type: `function`  
