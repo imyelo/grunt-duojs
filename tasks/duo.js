@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     var done = this.async();
 
     (function compile () {
-      var duo = new Duo(options.root)
+      var duo = new Duo(path.join(process.cwd(), options.root))
         .entry(options.entry)
         .standalone(options.standalone)
         .development(options.development)
