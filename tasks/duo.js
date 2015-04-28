@@ -9,6 +9,7 @@
 'use strict';
 
 var Duo = require('duo');
+var path = require('path');
 
 module.exports = function(grunt) {
 
@@ -29,7 +30,7 @@ module.exports = function(grunt) {
     var done = this.async();
 
     (function compile () {
-      var duo = new Duo(path.join(process.cwd(), options.root))
+      var duo = new Duo(path.resolve(process.cwd(), options.root))
         .entry(options.entry)
         .standalone(options.standalone)
         .development(options.development)
