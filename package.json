@@ -1,7 +1,7 @@
 {
   "name": "grunt-duojs",
   "description": "compile duojs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/imyelo/grunt-duojs",
   "author": {
     "name": "imyelo",
